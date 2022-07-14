@@ -5,6 +5,9 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
+    <color name="black">#E5000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#4c9069</color>
+    <color name="phone_page_color">#FF2196F3</color>
+    <color name="grey">#8A000000</color>
 </resources>

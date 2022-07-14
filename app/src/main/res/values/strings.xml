@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Contacts</string>
+    <string name="search_text">Search</string>
+    <string name="default_name">Tania Delacruz</string>
+    <string name="default_phone">+7 (858) 476-2312</string>
+    <string name="default_temperament">Choleric</string>
+    <string name="default_e_p_start">13.11.2001</string>
+    <string name="delimiter_text">-</string>
+    <string name="default_e_p_end_text">29.07.2018</string>
+    <string name="default_bigraphy_text">Ullamco esse quis fugiat do voluptate mollit sit proident aute sunt id. Proident ad enim laborum ullamco ea Lorem dolore labore duis sint deserunt qui est ut. Sint est velit irure occaecat nostrud tempor sit tempor ipsum magna sint esse quis officia.</string>
+    <string name="default_height">209.05</string>
 </resources>

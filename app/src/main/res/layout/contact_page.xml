@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clickable="true"
@@ -11,7 +10,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#4c9069"
+        android:background="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -19,7 +18,7 @@
             android:id="@+id/back_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="#4c9069"
+            android:backgroundTint="@color/colorPrimary"
             android:drawableLeft="@drawable/ic_back"/>
 
     </androidx.appcompat.widget.Toolbar>
@@ -28,8 +27,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
+        android:paddingLeft="@dimen/list_padding_left"
+        android:paddingRight="@dimen/list_padding_right"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar">
@@ -38,9 +37,9 @@
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tania Delacruz"
-            android:textColor="#e5000000"
-            android:textSize="24sp"
+            android:text="@string/default_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/name_page_size"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -48,13 +47,12 @@
             android:id="@+id/phone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="@dimen/phone_margin_top"
             android:clickable="true"
             android:focusable="true"
-            android:onClick="onCallPhoneNumber"
-            android:text="+7 (858) 476-2312"
-            android:textSize="14sp"
-            android:textColor="#FF2196F3"
+            android:text="@string/default_phone"
+            android:textSize="@dimen/phone_page_text_size"
+            android:textColor="@color/phone_page_color"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/name" />
 
@@ -62,10 +60,10 @@
             android:id="@+id/temperament"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Choleric"
-            android:textSize="14sp"
-            android:textColor="#8a000000"
+            android:layout_marginTop="@dimen/temperament_margin_top"
+            android:text="@string/default_temperament"
+            android:textSize="@dimen/temperamet_text_size"
+            android:textColor="@color/grey"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/phone" />
 
@@ -79,10 +77,9 @@
                 android:id="@+id/educationPeriodStart"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="13.11.2001"
-                android:textSize="14sp"
-                android:textColor="#8a000000"
+                android:text="@string/default_e_p_start"
+                android:textSize="@dimen/e_p_start_text_size"
+                android:textColor="@color/grey"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/temperament" />
 
@@ -90,10 +87,9 @@
                 android:id="@+id/educationPeriodDelimiter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text=" - "
-                android:textSize="14sp"
-                android:textColor="#8a000000"
+                android:text="@string/delimiter_text"
+                android:textSize="@dimen/delimiter_size"
+                android:textColor="@color/grey"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/temperament" />
 
@@ -101,10 +97,9 @@
                 android:id="@+id/educationPeriodEnd"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="29.07.2018"
-                android:textSize="14sp"
-                android:textColor="#8a000000"
+                android:text="@string/default_e_p_end_text"
+                android:textSize="@dimen/e_p_end_text_size"
+                android:textColor="@color/grey"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/temperament" />
         </LinearLayout>
@@ -113,11 +108,11 @@
             android:id="@+id/biography"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="@dimen/bigraphy_margin_top"
             android:maxLines="5"
-            android:text="Ullamco esse quis fugiat do voluptate mollit sit proident aute sunt id. Proident ad enim laborum ullamco ea Lorem dolore labore duis sint deserunt qui est ut. Sint est velit irure occaecat nostrud tempor sit tempor ipsum magna sint esse quis officia."
-            android:textSize="14sp"
-            android:textColor="#e5000000"
+            android:text="@string/default_bigraphy_text"
+            android:textSize="@dimen/default_biography_text_size"
+            android:textColor="@color/black"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/educationPeriod" />
     </LinearLayout>

@@ -15,8 +15,8 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#4c9069"
-            android:paddingEnd="16dp"
+            android:background="@color/colorPrimary"
+            android:paddingEnd="@dimen/toolbar_padding_end"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -26,7 +26,7 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/edit_text_shpe"
                 android:drawableStart="@drawable/ic_search"
-                android:hint="Search"
+                android:hint="@string/search_text"
                 />
         </androidx.appcompat.widget.Toolbar>
         <RelativeLayout

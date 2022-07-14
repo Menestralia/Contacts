@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="toolbar_padding_end">16dp</dimen>
+    <dimen name="name_page_size">24sp</dimen>
+    <dimen name="phone_margin_top">8dp</dimen>
+    <dimen name="phone_page_text_size">14sp</dimen>
+    <dimen name="temperament_margin_top">8dp</dimen>
+    <dimen name="temperamet_text_size">14sp</dimen>
+    <dimen name="e_p_start_text_size">14sp</dimen>
+    <dimen name="delimiter_size">14sp</dimen>
+    <dimen name="e_p_end_text_size">14sp</dimen>
+    <dimen name="bigraphy_margin_top">8dp</dimen>
+    <dimen name="default_biography_text_size">14sp</dimen>
+    <dimen name="name_text_size_list_item">18sp</dimen>
+    <dimen name="height_text_size">14sp</dimen>
+    <dimen name="phone_item_margin_top">4dp</dimen>
+    <dimen name="phone_item_margin_end">8dp</dimen>
+    <dimen name="phone_item_text_size">14sp</dimen>
+    <dimen name="height_padding_right">16dp</dimen>
+    <dimen name="item_padding_vertical">16dp</dimen>
+    <dimen name="item_padding_left">16dp</dimen>
+    <dimen name="list_padding_left">16dp</dimen>
+    <dimen name="list_padding_right">16dp</dimen>
+</resources>

@@ -12,8 +12,8 @@
         <entry key="app/src/main/res/layout/activity_contacts.xml" value="0.333786231884058" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.333786231884058" />
         <entry key="app/src/main/res/layout/contact_list_page.xml" value="0.333786231884058" />
-        <entry key="app/src/main/res/layout/contact_page.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/list_item_contact.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/contact_page.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/list_item_contact.xml" value="0.1" />
         <entry key="app/src/main/res/layout/progress_bar.xml" value="0.33" />
       </map>
     </option>
