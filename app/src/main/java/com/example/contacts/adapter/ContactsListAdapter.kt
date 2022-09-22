@@ -12,7 +12,7 @@ import kotlin.math.min
 class ContactsListAdapter(
     private val onContactChosen: (contact: UserContactItem) -> Unit,
 ) :
-    RecyclerView.Adapter<ContactsListAdapter.ViewHolder>(){
+    RecyclerView.Adapter<ContactsListAdapter.ViewHolder>() {
     private val items = mutableListOf<UserContactItem>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder =

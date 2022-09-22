@@ -1,4 +1,4 @@
-package com.example.contacts.viewmodel
+package com.example.contacts.viewmodel.list
 
 import android.util.Log
 import androidx.lifecycle.LiveData
@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.contacts.state.StateListFragment
 import com.example.contacts.model.UserContactItem
-import com.example.contacts.api.UserContacts
+import com.example.contacts.api.UserContactsInteractor
 import com.example.contacts.fragment.ContactListFragment.Companion.TAG
 import io.reactivex.rxjava3.core.Observable
 import io.reactivex.rxjava3.disposables.Disposable
@@ -16,13 +16,17 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.launch
 import java.util.concurrent.TimeUnit
+import javax.inject.Inject
 
 
-class ContactsListViewModel : ViewModel() {
+class ContactsListViewModel @Inject constructor(
+    val userContactsInteractor: UserContactsInteractor
+) : ViewModel() {
 
     private var contactsListMutable: MutableLiveData<List<UserContactItem>?> = MutableLiveData()
     var contactsList: LiveData<List<UserContactItem>?> = contactsListMutable
-    private var filterContactsListMutable: MutableLiveData<List<UserContactItem>?> = MutableLiveData()
+    private var filterContactsListMutable: MutableLiveData<List<UserContactItem>?> =
+        MutableLiveData()
     var filterContactsList: LiveData<List<UserContactItem>?> = filterContactsListMutable
     val selectedContact = MutableLiveData<UserContactItem?>()
     var stateList = MutableLiveData<StateListFragment>()
@@ -53,17 +57,17 @@ class ContactsListViewModel : ViewModel() {
             }
             Log.e(TAG, newListItems.toString())
             filterContactsListMutable.postValue(newListItems)
-            if(searchStringText.isEmpty())
+            if (searchStringText.isEmpty())
                 setDefaultState()
             else setStateSearching()
             emit(newListItems)
-    }
+        }
 
     private fun getPhoneNumbers(phoneNumber: String) = phoneNumber
-        .replace("(","")
-        .replace(")","")
+        .replace("(", "")
+        .replace(")", "")
         .replace("+", "")
-        .replace(" ","")
+        .replace(" ", "")
 
     private suspend fun updateContacts() {
         stateList.postValue(StateListFragment.PROCESSING)
@@ -76,10 +80,9 @@ class ContactsListViewModel : ViewModel() {
     }
 
     private suspend fun getContacts(): List<UserContactItem>? {
-        var userContacts = UserContacts()
-        var contactsList = mutableListOf<UserContactItem>()
+        val contactsList = mutableListOf<UserContactItem>()
         try {
-            val list = userContacts.getContactsList()
+            val list = userContactsInteractor.getContactsList()
             contactsList.addAll(list)
 
         } catch (exception: Exception) {
@@ -94,7 +97,7 @@ class ContactsListViewModel : ViewModel() {
         timerBeforeNextLoad = Observable
             .timer(TIME_BEFORE_NEXT_LOAD.toLong(), TimeUnit.SECONDS)
             .subscribeOn(Schedulers.io()).subscribe {
-                    isTimerExpired = true
+                isTimerExpired = true
             }
     }
 

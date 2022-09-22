@@ -1,8 +1,8 @@
 package com.example.contacts
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Window
+import androidx.appcompat.app.AppCompatActivity
 import com.example.contacts.fragment.ContactListFragment
 
 class MainActivity : AppCompatActivity() {
@@ -14,12 +14,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun openContactListFragment() {
-        supportFragmentManager.beginTransaction().
-            add(
-                R.id.container,
-                ContactListFragment(),
-                ContactListFragment.TAG
-            )
+        supportFragmentManager.beginTransaction().add(
+            R.id.container,
+            ContactListFragment(),
+            ContactListFragment.TAG
+        )
             .addToBackStack(MainActivity::class.java.simpleName)
             .commit()
     }

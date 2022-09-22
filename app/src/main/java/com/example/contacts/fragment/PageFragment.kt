@@ -19,6 +19,6 @@ abstract class PageFragment constructor() : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return  inflater.inflate(layoutId, container, false)
+        return inflater.inflate(layoutId, container, false)
     }
 }

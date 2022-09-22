@@ -10,24 +10,33 @@ import android.view.ViewGroup
 import android.widget.EditText
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
+import androidx.lifecycle.ViewModelProviders
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.contacts.app.App
+import com.example.contacts.viewmodel.list.ContactsListViewModelFactory
 import com.example.contacts.adapter.ContactsListAdapter
 import com.example.contacts.R
 import com.example.contacts.state.StateListFragment
 import com.example.contacts.model.UserContactItem
 import com.example.contacts.databinding.ContactListPageBinding
-import com.example.contacts.viewmodel.ContactsListViewModel
+import com.example.contacts.viewmodel.list.ContactsListViewModel
 import com.google.android.material.snackbar.Snackbar
-import io.reactivex.rxjava3.core.BackpressureStrategy
-import io.reactivex.rxjava3.disposables.CompositeDisposable
-import io.reactivex.rxjava3.subjects.BehaviorSubject
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.*
+import javax.inject.Inject
 
 class ContactListFragment : Fragment(), FragmentManager.OnBackStackChangedListener {
+
+    @Inject
+    lateinit var viewModelFactory: ContactsListViewModelFactory
+    private val viewModel: ContactsListViewModel by lazy {
+        ViewModelProviders.of(this, viewModelFactory)[ContactsListViewModel::class.java]
+    }
+
     private lateinit var binding: ContactListPageBinding
+
     private var adapter = ContactsListAdapter { contact ->
         viewModel.onContactSelected(contact)
     }
@@ -36,7 +45,7 @@ class ContactListFragment : Fragment(), FragmentManager.OnBackStackChangedListen
         LinearLayoutManager.VERTICAL,
         false
     )
-    private val viewModel: ContactsListViewModel = ContactsListViewModel()
+
 
     fun EditText.textChanges(): Flow<CharSequence?> {
         return callbackFlow {
@@ -63,6 +72,7 @@ class ContactListFragment : Fragment(), FragmentManager.OnBackStackChangedListen
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+        (context?.applicationContext as App).appComponent.inject(this)
         binding = ContactListPageBinding.inflate(inflater, container, false)
         binding.listContacts.adapter = adapter
         binding.listContacts.layoutManager = layoutManager

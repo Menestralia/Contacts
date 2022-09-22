@@ -1,30 +1,37 @@
 package com.example.contacts.fragment
 
-import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.activity.OnBackPressedCallback
-import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProviders
+import com.example.contacts.viewmodel.page.ContactPageViewModelFactory
 import com.example.contacts.R
+import com.example.contacts.app.App
 import com.example.contacts.model.UserContactItem
 import com.example.contacts.databinding.ContactPageBinding
-import com.example.contacts.viewmodel.ContactPageViewModel
+import com.example.contacts.viewmodel.page.ContactPageViewModel
+import javax.inject.Inject
 
-class ContactPageFragment(contactItem: UserContactItem) : PageFragment(R.layout.contact_page) {
+class ContactPageFragment(val contactItem: UserContactItem) : PageFragment(R.layout.contact_page) {
 
     private lateinit var binding: ContactPageBinding
-    private val viewModel: ContactPageViewModel = ContactPageViewModel(contactItem)
 
-    @RequiresApi(Build.VERSION_CODES.O)
+    @Inject
+    lateinit var viewModelFactory: ContactPageViewModelFactory
+    private val viewModel: ContactPageViewModel by lazy {
+        ViewModelProviders.of(this, viewModelFactory)[ContactPageViewModel::class.java]
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val contactItem = viewModel.getContactItem()
+        (context?.applicationContext as App).appComponent.inject(this)
+        val contactItem = contactItem
         binding = ContactPageBinding.inflate(inflater, container, false)
         binding.name.text = contactItem.name
         binding.phone.text = contactItem.phone
@@ -43,11 +50,13 @@ class ContactPageFragment(contactItem: UserContactItem) : PageFragment(R.layout.
         activity?.actionBar?.hide()
         (activity as AppCompatActivity).setSupportActionBar(binding.toolbar)
         (activity as AppCompatActivity).supportActionBar?.title = ""
-        activity?.onBackPressedDispatcher?.addCallback(viewLifecycleOwner, object : OnBackPressedCallback(true) {
-            override fun handleOnBackPressed() {
-                popBackStack()
-            }
-        })
+        activity?.onBackPressedDispatcher?.addCallback(
+            viewLifecycleOwner,
+            object : OnBackPressedCallback(true) {
+                override fun handleOnBackPressed() {
+                    popBackStack()
+                }
+            })
         return binding.root
     }
 
