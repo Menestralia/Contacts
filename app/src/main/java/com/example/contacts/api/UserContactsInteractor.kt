@@ -1,6 +1,7 @@
 package com.example.contacts.api
 
 import com.example.contacts.mapping.ToUserContactItemListMapper
+import com.example.contacts.model.UserCardListRemoteData
 import com.example.contacts.model.UserContact
 import com.example.contacts.model.UserContactItem
 import kotlinx.coroutines.*
@@ -8,11 +9,11 @@ import java.lang.Exception
 
 
 class UserContactsInteractor(
-    val contactsApi: ContactsApi,
-    val userContactItemListMapper: ToUserContactItemListMapper
-) {
+    private val contactsApi: ContactsApi,
+    private val userContactItemListMapper: ToUserContactItemListMapper
+): UserCardListRemoteData {
 
-    suspend fun getContactsList(): List<UserContactItem> {
+    override suspend fun getContactsList(): List<UserContactItem> {
         return coroutineScope {
             mutableListOf(
                 loadFirstSourceList()

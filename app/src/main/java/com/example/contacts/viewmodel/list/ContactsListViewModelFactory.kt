@@ -2,14 +2,14 @@ package com.example.contacts.viewmodel.list
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.contacts.api.UserContactsInteractor
+import com.example.contacts.model.UserCardsListRepository
 import javax.inject.Inject
 
 class ContactsListViewModelFactory @Inject constructor(
-    val userContactsInteractor: UserContactsInteractor
+    val userCardsListRepository: UserCardsListRepository
 ) : ViewModelProvider.Factory {
 
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
-        return ContactsListViewModel(userContactsInteractor) as T
+        return ContactsListViewModel(userCardsListRepository) as T
     }
 }

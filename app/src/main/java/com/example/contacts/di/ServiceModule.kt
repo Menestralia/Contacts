@@ -6,11 +6,13 @@ import dagger.Module
 import dagger.Provides
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import javax.inject.Singleton
 
 @Module
 class ServiceModule {
 
     @Provides
+    @Singleton
     fun providesRetrofit(): Retrofit {
         val gson = GsonBuilder()
             .setLenient()
@@ -22,6 +24,7 @@ class ServiceModule {
     }
 
     @Provides
+    @Singleton
     fun providesContactsApi(retrofit: Retrofit): ContactsApi =
         retrofit.create(ContactsApi::class.java)
 

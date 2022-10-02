@@ -1,6 +1,7 @@
 package com.example.contacts.di
 
 import com.example.contacts.api.UserContactsInteractor
+import com.example.contacts.model.UserCardsListRepository
 import com.example.contacts.viewmodel.page.ContactPageViewModelFactory
 import com.example.contacts.viewmodel.list.ContactsListViewModelFactory
 import dagger.Module
@@ -14,6 +15,6 @@ class ViewModelModule {
         ContactPageViewModelFactory()
 
     @Provides
-    fun provideContactsListViewModelFactory(userContactsInteractor: UserContactsInteractor): ContactsListViewModelFactory =
-        ContactsListViewModelFactory(userContactsInteractor)
+    fun provideContactsListViewModelFactory(userCardsListRepository: UserCardsListRepository): ContactsListViewModelFactory =
+        ContactsListViewModelFactory(userCardsListRepository)
 }

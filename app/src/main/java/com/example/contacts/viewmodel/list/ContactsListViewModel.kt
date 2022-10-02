@@ -7,8 +7,8 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.contacts.state.StateListFragment
 import com.example.contacts.model.UserContactItem
-import com.example.contacts.api.UserContactsInteractor
 import com.example.contacts.fragment.ContactListFragment.Companion.TAG
+import com.example.contacts.model.UserCardsListRepository
 import io.reactivex.rxjava3.core.Observable
 import io.reactivex.rxjava3.disposables.Disposable
 import io.reactivex.rxjava3.schedulers.Schedulers
@@ -20,7 +20,7 @@ import javax.inject.Inject
 
 
 class ContactsListViewModel @Inject constructor(
-    val userContactsInteractor: UserContactsInteractor
+    private val userCardsListRepository: UserCardsListRepository
 ) : ViewModel() {
 
     private var contactsListMutable: MutableLiveData<List<UserContactItem>?> = MutableLiveData()
@@ -71,18 +71,22 @@ class ContactsListViewModel @Inject constructor(
 
     private suspend fun updateContacts() {
         stateList.postValue(StateListFragment.PROCESSING)
-        val contacts = getContacts()?.toMutableList()
-        contacts?.let { contactsListMutable.postValue(it) }
+        val contacts = if (isTimerExpired) {
+            getContacts().toMutableList()
+        }
+        else userCardsListRepository.loadLocalData().toMutableList()
+        contacts.let { contactsListMutable.postValue(it) }
         Log.e(TAG, "contacts: ${contactsListMutable.value?.size}")
         if (!contacts.isNullOrEmpty())
             stateList.postValue(StateListFragment.DEFAULT)
-        updateTimerBeforeNextLoading()
     }
 
-    private suspend fun getContacts(): List<UserContactItem>? {
+    private suspend fun getContacts(): List<UserContactItem> {
+        updateTimerBeforeNextLoading()
+        Log.e(TAG, "getContacts()")
         val contactsList = mutableListOf<UserContactItem>()
         try {
-            val list = userContactsInteractor.getContactsList()
+            val list = userCardsListRepository.fetchUserCardList()
             contactsList.addAll(list)
 
         } catch (exception: Exception) {
@@ -100,8 +104,6 @@ class ContactsListViewModel @Inject constructor(
                 isTimerExpired = true
             }
     }
-
-    fun isTimerExpired() = isTimerExpired
 
     fun getContactList() = contactsList.value
 

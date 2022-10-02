@@ -102,11 +102,6 @@ class ContactListFragment : Fragment(), FragmentManager.OnBackStackChangedListen
         viewModel.setDefaultState()
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
-        activity?.finish()
-    }
-
     private fun onContactSelected(contact: UserContactItem?) {
         contact?.let {
             openContactCard(it)
@@ -133,7 +128,7 @@ class ContactListFragment : Fragment(), FragmentManager.OnBackStackChangedListen
 
     private fun updateRows(state: StateListFragment) {
         hideProgressBar()
-        var contactsList = mutableListOf<UserContactItem>()
+        val contactsList = mutableListOf<UserContactItem>()
         if (state == StateListFragment.DEFAULT) {
             viewModel.getContactList()?.let {
                 contactsList.addAll(it)
@@ -152,12 +147,12 @@ class ContactListFragment : Fragment(), FragmentManager.OnBackStackChangedListen
     override fun onResume() {
         super.onResume()
 
-        if (viewModel.isTimerExpired())
-            viewModel.loadContacts()
+        viewModel.loadContacts()
     }
 
     private fun showError(errorMessage: String?) {
         errorMessage?.let {
+            Log.e(TAG, it)
             Snackbar.make(binding.listLayout, it, Snackbar.LENGTH_LONG)
                 .show()
         }
