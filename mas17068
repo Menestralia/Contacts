@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="2.0">
+	<Ad id="743903" sequence="1">
+		<InLine>
+			<AdSystem>AdRiver</AdSystem>
+			<AdTitle>VAST Ad</AdTitle>
+			<Impression><![CDATA[
+				 https://ev.adriver.ru/cgi-bin/event.cgi?xpid=DDhdceVv2vINa1ZWqracr9GgREJ14LK5AyBE1RqAeDoXm0fn3s2EyXNB_VjlLFPGAQTcVdG-fVwjkloyb-reJS5k&sid=1&sliceid=0&bn=9150911&pz=0&sz=&ad=743903&bid=9150911&bt=61&tuid=-1&type=0&custom=207=&tail256= 
+			]]></Impression>
+			<Impression><![CDATA[
+				 
+			]]></Impression>
+			<Creatives>
+				<Creative id="9150911">
+					<Linear>
+						<Duration>00:00:15</Duration>
+						<TrackingEvents>
+							<Tracking event="creativeView"><![CDATA[
+								 https://ev.adriver.ru/cgi-bin/event.cgi?xpid=DDhdceVv2vINa1ZWqracr9GgREJ14LK5AyBE1RqAeDoXm0fn3s2EyXNB_VjlLFPGAQTcVdG-fVwjkloyb-reJS5k&sid=1&sliceid=0&bn=9150911&pz=0&sz=&ad=743903&bid=9150911&bt=61&tuid=-1&type=1&tail256= 
+							]]></Tracking>
+							<Tracking event="start"><![CDATA[
+								 https://ev.adriver.ru/cgi-bin/event.cgi?xpid=DDhdceVv2vINa1ZWqracr9GgREJ14LK5AyBE1RqAeDoXm0fn3s2EyXNB_VjlLFPGAQTcVdG-fVwjkloyb-reJS5k&sid=1&sliceid=0&bn=9150911&pz=0&sz=&ad=743903&bid=9150911&bt=61&tuid=-1&type=2&tail256= 
+							]]></Tracking>
+							<Tracking event="midpoint"><![CDATA[
+								 https://ev.adriver.ru/cgi-bin/event.cgi?xpid=DDhdceVv2vINa1ZWqracr9GgREJ14LK5AyBE1RqAeDoXm0fn3s2EyXNB_VjlLFPGAQTcVdG-fVwjkloyb-reJS5k&sid=1&sliceid=0&bn=9150911&pz=0&sz=&ad=743903&bid=9150911&bt=61&tuid=-1&type=3&tail256= 
+							]]></Tracking>
+							<Tracking event="firstQuartile"><![CDATA[
+								 https://ev.adriver.ru/cgi-bin/event.cgi?xpid=DDhdceVv2vINa1ZWqracr9GgREJ14LK5AyBE1RqAeDoXm0fn3s2EyXNB_VjlLFPGAQTcVdG-fVwjkloyb-reJS5k&sid=1&sliceid=0&bn=9150911&pz=0&sz=&ad=743903&bid=9150911&bt=61&tuid=-1&type=4&tail256= 
+							]]></Tracking>
+							<Tracking event="thirdQuartile"><![CDATA[
+								 https://ev.adriver.ru/cgi-bin/event.cgi?xpid=DDhdceVv2vINa1ZWqracr9GgREJ14LK5AyBE1RqAeDoXm0fn3s2EyXNB_VjlLFPGAQTcVdG-fVwjkloyb-reJS5k&sid=1&sliceid=0&bn=9150911&pz=0&sz=&ad=743903&bid=9150911&bt=61&tuid=-1&type=5&tail256= 
+							]]></Tracking>
+							<Tracking event="complete"><![CDATA[
+								 https://ev.adriver.ru/cgi-bin/event.cgi?xpid=DDhdceVv2vINa1ZWqracr9GgREJ14LK5AyBE1RqAeDoXm0fn3s2EyXNB_VjlLFPGAQTcVdG-fVwjkloyb-reJS5k&sid=1&sliceid=0&bn=9150911&pz=0&sz=&ad=743903&bid=9150911&bt=61&tuid=-1&type=6&tail256= 
+							]]></Tracking>
+							<Tracking event="mute"><![CDATA[
+								 https://ev.adriver.ru/cgi-bin/event.cgi?xpid=DDhdceVv2vINa1ZWqracr9GgREJ14LK5AyBE1RqAeDoXm0fn3s2EyXNB_VjlLFPGAQTcVdG-fVwjkloyb-reJS5k&sid=1&sliceid=0&bn=9150911&pz=0&sz=&ad=743903&bid=9150911&bt=61&tuid=-1&type=7&tail256= 
+							]]></Tracking>
+							<Tracking event="unmute"><![CDATA[
+								 https://ev.adriver.ru/cgi-bin/event.cgi?xpid=DDhdceVv2vINa1ZWqracr9GgREJ14LK5AyBE1RqAeDoXm0fn3s2EyXNB_VjlLFPGAQTcVdG-fVwjkloyb-reJS5k&sid=1&sliceid=0&bn=9150911&pz=0&sz=&ad=743903&bid=9150911&bt=61&tuid=-1&type=8&tail256= 
+							]]></Tracking>
+							<Tracking event="pause"><![CDATA[
+								 https://ev.adriver.ru/cgi-bin/event.cgi?xpid=DDhdceVv2vINa1ZWqracr9GgREJ14LK5AyBE1RqAeDoXm0fn3s2EyXNB_VjlLFPGAQTcVdG-fVwjkloyb-reJS5k&sid=1&sliceid=0&bn=9150911&pz=0&sz=&ad=743903&bid=9150911&bt=61&tuid=-1&type=9&tail256= 
+							]]></Tracking>
+							<Tracking event="rewind"><![CDATA[
+								 https://ev.adriver.ru/cgi-bin/event.cgi?xpid=DDhdceVv2vINa1ZWqracr9GgREJ14LK5AyBE1RqAeDoXm0fn3s2EyXNB_VjlLFPGAQTcVdG-fVwjkloyb-reJS5k&sid=1&sliceid=0&bn=9150911&pz=0&sz=&ad=743903&bid=9150911&bt=61&tuid=-1&type=10&tail256= 
+							]]></Tracking>
+							<Tracking event="resume"><![CDATA[
+								 https://ev.adriver.ru/cgi-bin/event.cgi?xpid=DDhdceVv2vINa1ZWqracr9GgREJ14LK5AyBE1RqAeDoXm0fn3s2EyXNB_VjlLFPGAQTcVdG-fVwjkloyb-reJS5k&sid=1&sliceid=0&bn=9150911&pz=0&sz=&ad=743903&bid=9150911&bt=61&tuid=-1&type=11&tail256= 
+							]]></Tracking>
+							<Tracking event="expand"><![CDATA[
+								 https://ev.adriver.ru/cgi-bin/event.cgi?xpid=DDhdceVv2vINa1ZWqracr9GgREJ14LK5AyBE1RqAeDoXm0fn3s2EyXNB_VjlLFPGAQTcVdG-fVwjkloyb-reJS5k&sid=1&sliceid=0&bn=9150911&pz=0&sz=&ad=743903&bid=9150911&bt=61&tuid=-1&type=12&tail256= 
+							]]></Tracking>
+							<Tracking event="collapse"><![CDATA[
+								 https://ev.adriver.ru/cgi-bin/event.cgi?xpid=DDhdceVv2vINa1ZWqracr9GgREJ14LK5AyBE1RqAeDoXm0fn3s2EyXNB_VjlLFPGAQTcVdG-fVwjkloyb-reJS5k&sid=1&sliceid=0&bn=9150911&pz=0&sz=&ad=743903&bid=9150911&bt=61&tuid=-1&type=13&tail256= 
+							]]></Tracking>
+							<Tracking event="acceptInvitation"><![CDATA[
+								 https://ev.adriver.ru/cgi-bin/event.cgi?xpid=DDhdceVv2vINa1ZWqracr9GgREJ14LK5AyBE1RqAeDoXm0fn3s2EyXNB_VjlLFPGAQTcVdG-fVwjkloyb-reJS5k&sid=1&sliceid=0&bn=9150911&pz=0&sz=&ad=743903&bid=9150911&bt=61&tuid=-1&type=14&tail256= 
+							]]></Tracking>
+							<Tracking event="close"><![CDATA[
+								 https://ev.adriver.ru/cgi-bin/event.cgi?xpid=DDhdceVv2vINa1ZWqracr9GgREJ14LK5AyBE1RqAeDoXm0fn3s2EyXNB_VjlLFPGAQTcVdG-fVwjkloyb-reJS5k&sid=1&sliceid=0&bn=9150911&pz=0&sz=&ad=743903&bid=9150911&bt=61&tuid=-1&type=15&tail256= 
+							]]></Tracking>
+						</TrackingEvents>
+						<VideoClicks>
+							<ClickThrough><![CDATA[
+								 https://ad.adriver.ru/cgi-bin/click.cgi?xpid=DDhdceVv2vINa1ZWqracr9GgREJ14LK5AyBE1RqAeDoXm0fn3s2EyXNB_VjlLFPGAQTcVdG-fVwjkloyb-reJS5k&sid=1&sliceid=0&bn=9150911&pz=0&sz=&ad=743903&bid=9150911&erir=12345678&bt=61&tail256= 
+							]]></ClickThrough>
+						</VideoClicks>
+						<MediaFiles>
+							<MediaFile delivery="progressive" type="video/mp4" bitrate="256" width="0" height="0"><![CDATA[
+								 https://masterh5.adriver.ru/mf/0009150/0009150911/0/tricolorcat.mp4 
+							]]></MediaFile>
+							<MediaFile delivery="progressive" type="video/mp4" bitrate="256" width="0" height="0"><![CDATA[
+								 https://masterh5.adriver.ru/mf/0009150/0009150911/0/tricolorcat.mp4 
+							]]></MediaFile>
+							<MediaFile delivery="progressive" type="video/mp4" bitrate="256" width="0" height="0"><![CDATA[
+								 https://masterh5.adriver.ru/mf/0009150/0009150911/0/tricolorcat.mp4 
+							]]></MediaFile>
+						</MediaFiles>
+					</Linear>
+				</Creative>
+			</Creatives>
+			<Advertiser><![CDATA[Реклама. "Муниципальное образовательное учреждение дополнительного образования детей специализированная детско-юношеская спортивная школа олимпийского резерва по боксу". Токен: 12345678910.]]></Advertiser>
+			<Survey></Survey>
+			<Error><![CDATA[
+				 https://ev.adriver.ru/cgi-bin/event.cgi?xpid=DDhdceVv2vINa1ZWqracr9GgREJ14LK5AyBE1RqAeDoXm0fn3s2EyXNB_VjlLFPGAQTcVdG-fVwjkloyb-reJS5k&sid=1&sliceid=0&bn=9150911&pz=0&sz=&ad=743903&bid=9150911&bt=61&tuid=-1&type=25&custom=172=[ERRORCODE] 
+			]]></Error>
+			<Extensions>
+				<Extension type="AdTune">
+					<![CDATA[ {"show": 1, "token": "12345678", "advertiserInfo": ""ads":{"info":"ООО \"Тестовая маркировка\""},"position":{"bottom":false,"left":true,"right":false,"top":true},"} ]]>
+				</Extension>
+			</Extensions>
+		</InLine>
+	</Ad>
+</VAST>
