@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="3.0">
+	<Ad id="743903" sequence="1">
+		<InLine>
+			<AdSystem><![CDATA[AdRiver]]></AdSystem>
+			<AdTitle><![CDATA[743903>]]></AdTitle>
+			<Impression id="AdRiver"><![CDATA[
+				 https://ads-test.tricolor.tv/cgi-bin/event.cgi?xpid=Di6bKY7ST_nps5fx0EU7G35u1e3QxE-fhCXeVQe65EZGEmylHOLvyg2kAXXsosptf810F6fDj7DlgyXonpR_gYgU&sid=1&sliceid=0&bn=9150911&pz=0&sz=&ad=743903&bid=9150911&bt=61&tuid=-1&type=0&custom=207=&tail256= 
+			]]></Impression>
+			<Impression id="ThirdParty"><![CDATA[
+				 
+			]]></Impression>
+			<Creatives>
+				<Creative id="9150911">
+					<Linear skipoffset="00:00:06">
+						<Duration>00:00:15</Duration>
+						<TrackingEvents>
+							<Tracking event="creativeView"><![CDATA[
+								 https://ev.adriver.ru/cgi-bin/event.cgi?xpid=Di6bKY7ST_nps5fx0EU7G35u1e3QxE-fhCXeVQe65EZGEmylHOLvyg2kAXXsosptf810F6fDj7DlgyXonpR_gYgU&sid=1&sliceid=0&bn=9150911&pz=0&sz=&ad=743903&bid=9150911&bt=61&tuid=-1&type=1&tail256= 
+							]]></Tracking>
+							<Tracking event="start"><![CDATA[
+								 https://ev.adriver.ru/cgi-bin/event.cgi?xpid=Di6bKY7ST_nps5fx0EU7G35u1e3QxE-fhCXeVQe65EZGEmylHOLvyg2kAXXsosptf810F6fDj7DlgyXonpR_gYgU&sid=1&sliceid=0&bn=9150911&pz=0&sz=&ad=743903&bid=9150911&bt=61&tuid=-1&type=2&tail256= 
+							]]></Tracking>
+							<Tracking event="midpoint"><![CDATA[
+								 https://ev.adriver.ru/cgi-bin/event.cgi?xpid=Di6bKY7ST_nps5fx0EU7G35u1e3QxE-fhCXeVQe65EZGEmylHOLvyg2kAXXsosptf810F6fDj7DlgyXonpR_gYgU&sid=1&sliceid=0&bn=9150911&pz=0&sz=&ad=743903&bid=9150911&bt=61&tuid=-1&type=3&tail256= 
+							]]></Tracking>
+							<Tracking event="firstQuartile"><![CDATA[
+								 https://ev.adriver.ru/cgi-bin/event.cgi?xpid=Di6bKY7ST_nps5fx0EU7G35u1e3QxE-fhCXeVQe65EZGEmylHOLvyg2kAXXsosptf810F6fDj7DlgyXonpR_gYgU&sid=1&sliceid=0&bn=9150911&pz=0&sz=&ad=743903&bid=9150911&bt=61&tuid=-1&type=4&tail256= 
+							]]></Tracking>
+							<Tracking event="thirdQuartile"><![CDATA[
+								 https://ev.adriver.ru/cgi-bin/event.cgi?xpid=Di6bKY7ST_nps5fx0EU7G35u1e3QxE-fhCXeVQe65EZGEmylHOLvyg2kAXXsosptf810F6fDj7DlgyXonpR_gYgU&sid=1&sliceid=0&bn=9150911&pz=0&sz=&ad=743903&bid=9150911&bt=61&tuid=-1&type=5&tail256= 
+							]]></Tracking>
+							<Tracking event="complete"><![CDATA[
+								 https://ev.adriver.ru/cgi-bin/event.cgi?xpid=Di6bKY7ST_nps5fx0EU7G35u1e3QxE-fhCXeVQe65EZGEmylHOLvyg2kAXXsosptf810F6fDj7DlgyXonpR_gYgU&sid=1&sliceid=0&bn=9150911&pz=0&sz=&ad=743903&bid=9150911&bt=61&tuid=-1&type=6&tail256= 
+							]]></Tracking>
+							<Tracking event="mute"><![CDATA[
+								 https://ev.adriver.ru/cgi-bin/event.cgi?xpid=Di6bKY7ST_nps5fx0EU7G35u1e3QxE-fhCXeVQe65EZGEmylHOLvyg2kAXXsosptf810F6fDj7DlgyXonpR_gYgU&sid=1&sliceid=0&bn=9150911&pz=0&sz=&ad=743903&bid=9150911&bt=61&tuid=-1&type=7&tail256= 
+							]]></Tracking>
+							<Tracking event="unmute"><![CDATA[
+								 https://ev.adriver.ru/cgi-bin/event.cgi?xpid=Di6bKY7ST_nps5fx0EU7G35u1e3QxE-fhCXeVQe65EZGEmylHOLvyg2kAXXsosptf810F6fDj7DlgyXonpR_gYgU&sid=1&sliceid=0&bn=9150911&pz=0&sz=&ad=743903&bid=9150911&bt=61&tuid=-1&type=8&tail256= 
+							]]></Tracking>
+							<Tracking event="pause"><![CDATA[
+								 https://ev.adriver.ru/cgi-bin/event.cgi?xpid=Di6bKY7ST_nps5fx0EU7G35u1e3QxE-fhCXeVQe65EZGEmylHOLvyg2kAXXsosptf810F6fDj7DlgyXonpR_gYgU&sid=1&sliceid=0&bn=9150911&pz=0&sz=&ad=743903&bid=9150911&bt=61&tuid=-1&type=9&tail256= 
+							]]></Tracking>
+							<Tracking event="rewind"><![CDATA[
+								 https://ev.adriver.ru/cgi-bin/event.cgi?xpid=Di6bKY7ST_nps5fx0EU7G35u1e3QxE-fhCXeVQe65EZGEmylHOLvyg2kAXXsosptf810F6fDj7DlgyXonpR_gYgU&sid=1&sliceid=0&bn=9150911&pz=0&sz=&ad=743903&bid=9150911&bt=61&tuid=-1&type=10&tail256= 
+							]]></Tracking>
+							<Tracking event="resume"><![CDATA[
+								 https://ev.adriver.ru/cgi-bin/event.cgi?xpid=Di6bKY7ST_nps5fx0EU7G35u1e3QxE-fhCXeVQe65EZGEmylHOLvyg2kAXXsosptf810F6fDj7DlgyXonpR_gYgU&sid=1&sliceid=0&bn=9150911&pz=0&sz=&ad=743903&bid=9150911&bt=61&tuid=-1&type=11&tail256= 
+							]]></Tracking>
+							<Tracking event="expand"><![CDATA[
+								 https://ev.adriver.ru/cgi-bin/event.cgi?xpid=Di6bKY7ST_nps5fx0EU7G35u1e3QxE-fhCXeVQe65EZGEmylHOLvyg2kAXXsosptf810F6fDj7DlgyXonpR_gYgU&sid=1&sliceid=0&bn=9150911&pz=0&sz=&ad=743903&bid=9150911&bt=61&tuid=-1&type=12&tail256= 
+							]]></Tracking>
+							<Tracking event="collapse"><![CDATA[
+								 https://ev.adriver.ru/cgi-bin/event.cgi?xpid=Di6bKY7ST_nps5fx0EU7G35u1e3QxE-fhCXeVQe65EZGEmylHOLvyg2kAXXsosptf810F6fDj7DlgyXonpR_gYgU&sid=1&sliceid=0&bn=9150911&pz=0&sz=&ad=743903&bid=9150911&bt=61&tuid=-1&type=13&tail256= 
+							]]></Tracking>
+							<Tracking event="acceptInvitation"><![CDATA[
+								 https://ev.adriver.ru/cgi-bin/event.cgi?xpid=Di6bKY7ST_nps5fx0EU7G35u1e3QxE-fhCXeVQe65EZGEmylHOLvyg2kAXXsosptf810F6fDj7DlgyXonpR_gYgU&sid=1&sliceid=0&bn=9150911&pz=0&sz=&ad=743903&bid=9150911&bt=61&tuid=-1&type=14&tail256= 
+							]]></Tracking>
+							<Tracking event="close"><![CDATA[
+								 https://ev.adriver.ru/cgi-bin/event.cgi?xpid=Di6bKY7ST_nps5fx0EU7G35u1e3QxE-fhCXeVQe65EZGEmylHOLvyg2kAXXsosptf810F6fDj7DlgyXonpR_gYgU&sid=1&sliceid=0&bn=9150911&pz=0&sz=&ad=743903&bid=9150911&bt=61&tuid=-1&type=15&tail256= 
+							]]></Tracking>
+							<Tracking event="fullscreen"><![CDATA[
+								 https://ev.adriver.ru/cgi-bin/event.cgi?xpid=Di6bKY7ST_nps5fx0EU7G35u1e3QxE-fhCXeVQe65EZGEmylHOLvyg2kAXXsosptf810F6fDj7DlgyXonpR_gYgU&sid=1&sliceid=0&bn=9150911&pz=0&sz=&ad=743903&bid=9150911&bt=61&tuid=-1&type=16&tail256= 
+							]]></Tracking>
+							<Tracking event="exitFullscreen"><![CDATA[
+								 https://ev.adriver.ru/cgi-bin/event.cgi?xpid=Di6bKY7ST_nps5fx0EU7G35u1e3QxE-fhCXeVQe65EZGEmylHOLvyg2kAXXsosptf810F6fDj7DlgyXonpR_gYgU&sid=1&sliceid=0&bn=9150911&pz=0&sz=&ad=743903&bid=9150911&bt=61&tuid=-1&type=17&tail256= 
+							]]></Tracking>
+							<Tracking event="skip"><![CDATA[
+								 https://ev.adriver.ru/cgi-bin/event.cgi?xpid=Di6bKY7ST_nps5fx0EU7G35u1e3QxE-fhCXeVQe65EZGEmylHOLvyg2kAXXsosptf810F6fDj7DlgyXonpR_gYgU&sid=1&sliceid=0&bn=9150911&pz=0&sz=&ad=743903&bid=9150911&bt=61&tuid=-1&type=18&tail256= 
+							]]></Tracking>
+						</TrackingEvents>
+						<VideoClicks>
+							<ClickThrough><![CDATA[
+								 https://ads-test.tricolor.tv/cgi-bin/click.cgi?xpid=Di6bKY7ST_nps5fx0EU7G35u1e3QxE-fhCXeVQe65EZGEmylHOLvyg2kAXXsosptf810F6fDj7DlgyXonpR_gYgU&sid=1&sliceid=0&bn=9150911&pz=0&sz=&ad=743903&bid=9150911&bt=61&erir=12345678&custom=8=1&tail256= 
+							]]></ClickThrough>
+						</VideoClicks>
+						<MediaFiles>
+							<MediaFile delivery="progressive" type="video/mp4" bitrate="256" width="0" height="0"><![CDATA[
+								 https://servers2.adriver.ru/mf/0009150/0009150911/0/tricolorcat.mp4 
+							]]></MediaFile>
+							<MediaFile delivery="progressive" type="video/mp4" bitrate="256" width="0" height="0"><![CDATA[
+								 https://servers2.adriver.ru/mf/0009150/0009150911/0/tricolorcat.mp4 
+							]]></MediaFile>
+							<MediaFile delivery="progressive" type="video/mp4" bitrate="256" width="0" height="0"><![CDATA[
+								 https://servers2.adriver.ru/mf/0009150/0009150911/0/tricolorcat.mp4 
+							]]></MediaFile>
+						</MediaFiles>
+					</Linear>
+					<CreativeExtensions>
+						<Extension type="AdTune">
+							<![CDATA[ {"show": 1, "token": "123", "advertiserInfo": ""ads":{"info":"ООО \"Тестовая маркировка\""},"position":{"bottom":false,"left":true,"right":false,"top":true},"} ]]>
+						</Extension>
+					</CreativeExtensions>
+				</Creative>
+			</Creatives>
+			<Description><![CDATA[Разнообразный и богатый опыт сложившаяся структура организации позволяет оценить значение существенных финансовых и административных условий. Повседневная практика показывает, что дальнейшее развитие различных форм деятельности требуют определения и уточнения новых предложений.
+
+				Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений. Товарищи! рамки и место обучения кадров позволяет оценить значение дальнейших направлений развития. Таким образом реализация намеченных плановых заданий требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям.Разнообразный и богатый опыт сложившаяся структура организации позволяет оценить значение существенных финансовых и административных условий. Повседневная практика показывает, что дальнейшее развитие различных форм деятельности требуют определения и уточнения новых предложений.
+
+				Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений. Товарищи! рамки и место обучения кадров позволяет оценить значение дальнейших направлений развития. Таким образом реализация намеченных плановых заданий требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям.Разнообразный и богатый опыт сложившаяся структура организации позволяет оценить значение существенных финансовых и административных условий. Повседневная практика показывает, что дальнейшее развитие различных форм деятельности требуют определения и уточнения новых предложений.
+
+				Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений. Товарищи! рамки и место обучения кадров позволяет оценить значение дальнейших направлений развития. Таким образом реализация намеченных плановых заданий требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям.Разнообразный и богатый опыт сложившаяся структура организации позволяет оценить значение существенных финансовых и административных условий. Повседневная практика показывает, что дальнейшее развитие различных форм деятельности требуют определения и уточнения новых предложений.
+
+				Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений. Товарищи! рамки и место обучения кадров позволяет оценить значение дальнейших направлений развития. Таким образом реализация намеченных плановых заданий требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям.]]></Description>
+			<Advertiser><![CDATA[Реклама. "Муниципальное образовательное учреждение дополнительного образования детей специализированная детско-юношеская спортивная школа олимпийского резерва по боксу. Муниципальное образовательное учреждение дополнительного образования детей специализированная детско-юношеская спортивная школа олимпийского резерва по боксу. Муниципальное образовательное учреждение дополнительного образования детей специализированная детско-юношеская спортивная школа олимпийского резерва по боксу". Токен: 12345678910.]]></Advertiser>
+			<Survey></Survey>
+			<Error><![CDATA[
+				 https://ads-test.tricolor.tv/cgi-bin/event.cgi?xpid=Di6bKY7ST_nps5fx0EU7G35u1e3QxE-fhCXeVQe65EZGEmylHOLvyg2kAXXsosptf810F6fDj7DlgyXonpR_gYgU&sid=1&sliceid=0&bn=9150911&pz=0&sz=&ad=743903&bid=9150911&bt=61&tuid=-1&type=25&custom=172=[ERRORCODE] 
+			]]></Error>
+		</InLine>
+	</Ad>
+</VAST>`
